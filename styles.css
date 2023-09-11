@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.container-1 {
+    display: flex;
+}
+
+.container-2 {
+    display: flex;
+    background-color: antiquewhite;
+    width: 1100px;
+    height: 570px;
+}
+
+header {
+    background-color: #F8EA8C;
+    padding: 1%;
+    text-align: center;
+}
+
+.container-3 {
+    display: flex;
+    background-color: #bdfaf3b8;
+    width: 650px;
+    height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 20%;
+    margin-top: 10%;
+}
+
+form {
+    display: flex;
+    width: 650px;
+    height: 300px;
+}
+
+.first-form {
+    margin-top: 1%;
+    margin-left: 3%;
+}
+
+.first-form,
+label {
+    text-align: right;
+    padding-top: 2%;
+}
+
+.first-form input {
+    height: 20.53px;
+    width: 184.53px;
+}
+
+.first-form select {
+    height: 20.53px;
+    width: 184.53px;
+}
+
+.second-form {
+    margin-left: 4%;
+    margin-top: 3%;
+}
+
+
+button {
+    margin-top: 3%;
+    background-color: #4CD7D0;
+    padding: 2%;
+    cursor: pointer;
+    transition: .2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+    overflow: hidden;
+    border-radius: 3rem;
+}
+
+button::after {
+    background-color: yellow;
+    border-radius: 3rem;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: .2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+}
+
+button:hover::after {
+    transform: translate(0, 0);
+}
+
+button:hover {
+    border: 2px solid transparent;
+    color: indigo;
+    transform: scale(1.05);
+    will-change: transform;
+}
+
+aside {
+    background-color: #4CD7D0;
+    width: 240px;
+    text-align: center;
+    padding-top: 15%;
+}
+
+nav {
+    background-color: #E1C340;
+    width: 240px;
+    text-align: center;
+    padding-top: 15%;
+}
+
+nav div {
+    padding-top: 4%;
+}
+
+footer {
+    background-color: #F8EA8C;
+    padding: 1%;
+    text-align: center;
+
+}
